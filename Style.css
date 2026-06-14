@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Monserrat';
+}
+/* Header navbar */
+nav {
+    background: linear-gradient(135deg, #6b728036, #ffffff);
+  }
+.navbar-nav {
+    width: auto; 
+}
+.navbar-collapse {
+    padding: 0.5rem 1rem;
+}
+.navbar-nav {
+    width: auto;
+    overflow: visible;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    display: inline-block; 
+    transition: transform 0.2s ease-out,color 0.2s ease-in ; 
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.15);
+  transform-origin: center;
+}
+img {
+    width: 70px;
+    height: auto;
+}
+i{
+    width: 80px;
+}
+.navbar-toggler {
+    border: none;
+    font-size: 1.em;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* list product */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.dropdown-menu {
+  background: #1a1d29;
+  border: 1px solid #2a2e40;
+}
+.dropdown-item {
+  color: #cfcfcf;
+}
+.dropdown-item:hover {
+  background: #2a2e40;
+  color: #fff;
+}
+
+/* Hero sec */
+.hero-section {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: linear-gradient(135deg, #6b728053, #ffffff31);
+}
+
+.img-wrapper {
+  perspective: 3000px;
+}
+
+.img-wrapper img {
+  transition: transform 0.4s ease;
+}
+.img-wrapper img:hover {
+  transform: translateZ(60px) scale(1.25);
+  z-index: 1;
+  position: relative;
+}
+.V{
+  color: rgba(128, 0, 128, 0.42);
+}
+
+/* Card product */
+
+.card.product-card {
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.583);
+  border-radius: 20px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.12);
+}
+.card-img-top-1{
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.b{
+   background-color: rgba(128, 128, 128, 0.12);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.icon{
+  width: 150px;
+}
+
+/* footer */
+.footer-img {
+  width: 60px;
+  height:100%;
+}
+.footer-icon a {
+  width: auto;
+  transition: transform 0.25s ;
+}
+.footer-icon a:hover {
+  transform: scale(1.15);
+  transform-origin: center;
+}
