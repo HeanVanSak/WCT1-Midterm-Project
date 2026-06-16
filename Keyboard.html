@@ -26,11 +26,9 @@
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
-
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse justify-content-center w-75" id="navbarNavAltMarkup">
           <div class="navbar-nav gap-5 align-items-center">
             <a class="nav-link active" href="./index.html">Home</a>
-
             <div class="nav-item dropdown">
               <a class="nav-link active dropdown-toggle" href="./Products.html" role="button" data-bs-toggle="dropdown">
                 Products
@@ -42,12 +40,26 @@
                 <li><a class="dropdown-item" href="./Products.html#accessories">Accessories</a></li>
               </ul>
             </div>
-            <a class="nav-link active " href="./AboutPage.html">About</a>
+            <a class="nav-link active" href="./AboutPage.html">About</a>
             <a class="nav-link active" href="./ContactPage.html">Services</a>
           </div>
+
+          <div class="d-lg-none mt-2 px-2 pb-2">
+            <input type="text" class="form-control rounded-pill" placeholder="Search...">
+          </div>
         </div>
-        <i class="fa-solid fa-magnifying-glass ms-auto d-none d-lg-block"></i>
+        <div class="d-none d-lg-flex position-relative ">
+          <div class="collapse" id="desktopSearch">
+            <input type="text" class="form-control rounded-pill position-absolute me-5" placeholder="Search..."
+              style="right: 40px; width: 180px;">
+          </div>
+          <button class="btn border-0" data-bs-toggle="collapse" data-bs-target="#desktopSearch">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
       </div>
+
     </nav>
   </header>
 
@@ -193,7 +205,14 @@
             about feel as much as performance.</p>
         </div>
 
-
+        <div class="col-12 col-md-4 col-lg-4 col-sm-12">
+          <div class="d-flex align-items-center gap-2 ms-5 pt-3">
+            <h6 class="text-white mb-0">Phone Number : 097 3682 442</h6>
+          </div>
+          <div class="d-flex align-items-center gap-2  ms-5">
+            <h6 class="text-white mt-3">Email : heanvansak27737@gmail.com</h6>
+          </div>
+        </div>
         <div class="col-12 col-md-4 col-lg-4 col-sm-12">
           <h5 class="text-white mb-3">Follow us</h5>
           <div class="d-flex gap-3 fs-5 footer-icon ms-3">
@@ -204,19 +223,11 @@
                 class="fa-brands fa-facebook"></i></a>
             <a href="https://t.me/vansak02" style="color:#cfcfcf;"><i class="fa-brands fa-telegram"></i></a>
           </div>
-        </div>
-
-        <div class="col-12 col-md-4 col-lg-4 col-sm-12">
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <h5 class="text-white mb-0">Phone Number : 097 3682 442</h5>
-          </div>
-           <div class="d-flex align-items-center gap-2 mb-3">
-            <h5 class="text-white mt-3">Email : heanvansak27737@gmail.com</h5>
-          </div>
+          <p class="text-center mt-5" style="color:#9a9ca8;">&copy; 2026 HVS keebs. All rights reserved.</p>
         </div>
 
       </div>
-      <p class="text-center mb-0" style="color:#9a9ca8;">&copy; 2026 HVS keebs. All rights reserved.</p>
+
     </div>
   </footer>
 </body>

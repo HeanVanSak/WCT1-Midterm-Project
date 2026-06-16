@@ -19,7 +19,7 @@
   <header>
     <!-- Navbar-->
 
-    <nav class="navbar navbar-expand-lg">
+       <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <img class="rounded-circle" src="./img/image.png">
 
@@ -27,11 +27,9 @@
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
-
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse justify-content-center w-75" id="navbarNavAltMarkup">
           <div class="navbar-nav gap-5 align-items-center">
             <a class="nav-link active" href="./index.html">Home</a>
-
             <div class="nav-item dropdown">
               <a class="nav-link active dropdown-toggle" href="./Products.html" role="button" data-bs-toggle="dropdown">
                 Products
@@ -46,29 +44,43 @@
             <a class="nav-link active" href="./AboutPage.html">About</a>
             <a class="nav-link active" href="./ContactPage.html">Services</a>
           </div>
+
+          <div class="d-lg-none mt-2 px-2 pb-2">
+            <input type="text" class="form-control rounded-pill" placeholder="Search...">
+          </div>
         </div>
-        <i class="fa-solid fa-magnifying-glass ms-auto d-none d-lg-block"></i>
+        <div class="d-none d-lg-flex position-relative ">
+          <div class="collapse" id="desktopSearch">
+            <input type="text" class="form-control rounded-pill position-absolute me-5" placeholder="Search..."
+              style="right: 40px; width: 180px;">
+          </div>
+          <button class="btn border-0" data-bs-toggle="collapse" data-bs-target="#desktopSearch">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
       </div>
+
     </nav>
   </header>
- <!-- Hero section -->
-<section class="hero-section position-relative d-flex w-100">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-lg-6 img-wrapper">
-        <a href="./Keyboard.html"><img class="w-100" src="./img/image copy.png" alt="Hero"></a>
-      </div>
-      <div class="col-12 col-lg-6 mt-5">
-        <h1>Welcome to our Keebs store</h1>
-        <p>We provide the best quality keyboards, switches and keycaps.</p>
-        <a href="./Keyboard.html"><button class="btn btn-dark rounded-5 w-25">View Stocks</button></a> 
+  <!-- Hero section -->
+  <section class="hero-section position-relative d-flex w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 col-md-6 img-wrapper">
+          <a href="./Keyboard.html"><img class="w-100" src="./img/image copy.png" alt="Hero"></a>
+        </div>
+        <div class="col-12 col-lg-6 col-md-6  mt-5 py-4">
+          <h1>Welcome to our Keebs store</h1>
+          <p>We provide the best quality keyboards, switches and keycaps.</p>
+          <a href="./Keyboard.html"><button class="btn btn-dark rounded-5 w-25">Stocks</button></a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
   <!-- Top product section -->
   <section class="container ">
-    <h1 class="text-black d-flex justify-content-center">BEST <span class="text-warning"> SELLER</span></h1>
+    <h1 class="text-black d-flex justify-content-center p-4">BEST <span class="text-warning"> SELLER</span></h1>
     <div class="row g-4 py-3">
       <!-- Product1 -->
       <div class="col-12 col-md-6 col-lg-4">
@@ -95,7 +107,7 @@
       <!-- Product 2 -->
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card h-100 product-card ">
-           <img class="w-50 p-2" src="./img/image copy 12.png" alt="">
+          <img class="w-50 p-2" src="./img/image copy 12.png" alt="">
           <img src="./img/image copy 11.png" class="card-img-top" alt="">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Aula S75 PRO</h5>
@@ -116,7 +128,7 @@
       <!-- Product 3 -->
       <div class=" col-12 col-md-6 col-lg-4">
         <div class="card h-100 product-card  ">
-           <img class="w-50  ms-3" src="./img/image copy 13.png" alt="">
+          <img class="w-50  ms-3" src="./img/image copy 13.png" alt="">
           <img src="./img/image copy 3.png" class="card-img-top" alt="Keyboard 3">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Leobog Hi75C </h5>
@@ -151,7 +163,14 @@
             about feel as much as performance.</p>
         </div>
 
-
+        <div class="col-12 col-md-4 col-lg-4 col-sm-12">
+          <div class="d-flex align-items-center gap-2 ms-5 pt-3">
+            <h6 class="text-white mb-0">Phone Number : 097 3682 442</h6>
+          </div>
+          <div class="d-flex align-items-center gap-2  ms-5">
+            <h6 class="text-white mt-3">Email : heanvansak27737@gmail.com</h6>
+          </div>
+        </div>
         <div class="col-12 col-md-4 col-lg-4 col-sm-12">
           <h5 class="text-white mb-3">Follow us</h5>
           <div class="d-flex gap-3 fs-5 footer-icon ms-3">
@@ -162,9 +181,11 @@
                 class="fa-brands fa-facebook"></i></a>
             <a href="https://t.me/vansak02" style="color:#cfcfcf;"><i class="fa-brands fa-telegram"></i></a>
           </div>
+          <p class="text-center mt-5" style="color:#9a9ca8;">&copy; 2026 HVS keebs. All rights reserved.</p>
         </div>
+
       </div>
-      <p class="text-center mb-0" style="color:#9a9ca8;">&copy; 2026 HVS keebs. All rights reserved.</p>
+
     </div>
   </footer>
 </body>
