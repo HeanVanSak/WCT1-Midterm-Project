@@ -1,0 +1,74 @@
+/* Base Page Elements styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family:'Monserrat', 'sans-serif';
+}
+body {
+  background-color: #f8f9fa;
+}
+
+.custom-form-header {
+  background-color: #008ece;
+  font-size: 1.05rem;
+  letter-spacing: 0.2px;
+}
+
+.custom-input {
+  height: 48px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding-left: 12px;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+.custom-input.border-cyan {
+  border-color: #008ece !important;
+}
+
+.custom-textarea {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 0.95rem;
+  color: #333333;
+  resize: vertical; 
+}
+
+/* Input Fields Accent Color Focus States */
+.custom-input:focus, .custom-textarea:focus {
+  border-color: #008ece;
+  box-shadow: 0 0 0 0.25rem rgba(0, 142, 206, 0.15);
+  outline: none;
+}
+
+/* Input Fields Text Color Formatting */
+.custom-input::placeholder, .custom-textarea::placeholder {
+  color: #8e949e;
+}
+
+/* Submit Action Button Configuration */
+.btn-submit {
+  background-color: #008ece;
+  color: #ffffff;
+  font-size: 0.95rem;
+  border: none;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0077ae;
+  color: #ffffff;
+}
+
+.btn-submit:active {
+  transform: scale(0.98);
+}
+
+.img-1{
+    width: 40rem;
+    height: 30rem;
+    border-radius: 30px;
+}

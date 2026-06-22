@@ -14,41 +14,50 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
-<body class="w-100">
+<body class="w-auto h-auto">
   <!-- Header -->
   <header>
     <!-- Navbar-->
 
-       <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <img class="rounded-circle" src="./img/image.png">
+        <img class="rounded-circle" src="./img/image.png" alt="Logo">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse justify-content-center w-75" id="navbarNavAltMarkup">
-          <div class="navbar-nav gap-5 align-items-center">
-            <a class="nav-link active" href="./index.html">Home</a>
-            <div class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="./Products.html" role="button" data-bs-toggle="dropdown">
-                Products
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./Keyboard.html">Keyboards</a></li>
-                <li><a class="dropdown-item" href="./Products.html#keycaps">Keycaps</a></li>
-                <li><a class="dropdown-item" href="./Products.html#switches">Switches</a></li>
-                <li><a class="dropdown-item" href="./Products.html#accessories">Accessories</a></li>
-              </ul>
-            </div>
-            <a class="nav-link active" href="./AboutPage.html">About</a>
-            <a class="nav-link active" href="./ContactPage.html">Services</a>
+
+        <div class="offcanvas offcanvas-end w-75" id="navbarNavAltMarkup">
+          <div class="offcanvas-header d-lg-none w-100 justify-content-end p-3">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
 
-          <div class="d-lg-none mt-2 px-2 pb-2">
-            <input type="text" class="form-control rounded-pill" placeholder="Search...">
+          <div class="offcanvas-body d-flex flex-column align-items-center pt-0">
+            <div class="navbar-nav gap-5 align-items-center text-center">
+              <a class="nav-link active" href="./index.html">Home</a>
+              <div class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="./Products.html" role="button"
+                  data-bs-toggle="dropdown">
+                  Products
+                </a>
+                <ul class="dropdown-menu text-center">
+                  <li><a class="dropdown-item" href="./Keyboard.html">Keyboards</a></li>
+                  <li><a class="dropdown-item" href="./keycaps.html">Keycaps</a></li>
+                  <li><a class="dropdown-item" href="./ass.html">Accessories</a></li>
+                </ul>
+              </div>
+              <a class="nav-link active" href="./AboutPage.html">About</a>
+              <a class="nav-link active" href="./contact.html">Contact</a>
+            </div>
+
+            <div class="d-lg-none mt-5 w-100 px-2">
+              <input type="text" class="form-control rounded-pill" placeholder="Search...">
+            </div>
           </div>
+
         </div>
+
         <div class="d-none d-lg-flex position-relative ">
           <div class="collapse" id="desktopSearch">
             <input type="text" class="form-control rounded-pill position-absolute me-5" placeholder="Search..."
@@ -60,7 +69,6 @@
         </div>
 
       </div>
-
     </nav>
   </header>
   <!-- Hero section -->
@@ -71,16 +79,84 @@
           <a href="./Keyboard.html"><img class="w-100" src="./img/image copy.png" alt="Hero"></a>
         </div>
         <div class="col-12 col-lg-6 col-md-6  mt-5 py-4">
-          <h1>Welcome to our Keebs store</h1>
+          <h1 class="typing-text">Welcome to our Keebs store</h1>
           <p>We provide the best quality keyboards, switches and keycaps.</p>
           <a href="./Keyboard.html"><button class="btn btn-dark rounded-5 w-25">Stocks</button></a>
         </div>
       </div>
     </div>
   </section>
+  <section>
+    <div class="carousel">
+  <div class="group">
+    <img src="./img/image copy 40.png" alt="">
+    <img src="./img/image copy 12.png" alt="">
+    <img src="./img/image copy 13.png" alt="">
+    <img src="./img/image copy 14.png" alt="">
+    <img src="./img/image copy 15.png" alt="">
+    <img src="./img/image copy 16.png" alt="">
+    <img src="./img/image copy 17.png" alt="">
+  </div>
+  
+  <div class="group" aria-hidden="true">
+    <img src="./img/image copy 40.png" alt="">
+    <img src="./img/image copy 12.png" alt="">
+    <img src="./img/image copy 13.png" alt="">
+    <img src="./img/image copy 14.png" alt="">
+    <img src="./img/image copy 15.png" alt="">
+    <img src="./img/image copy 16.png" alt="">
+    <img src="./img/image copy 17.png" alt="">
+  </div>
+
+  <div class="group" aria-hidden="true">
+    <img src="./img/image copy 40.png" alt="">
+    <img src="./img/image copy 12.png" alt="">
+    <img src="./img/image copy 13.png" alt="">
+    <img src="./img/image copy 14.png" alt="">
+    <img src="./img/image copy 15.png" alt="">
+    <img src="./img/image copy 16.png" alt="">
+    <img src="./img/image copy 17.png" alt="">
+  </div>
+</div>
+  </section>
+
+  <section >
+ <div class="container p-5 w-100">
+  <div class="row gy-4 align-items-center"> 
+    <div class="col-12 col-md-6 col-lg-6">
+      <h1 class="fw-bold">LIMITED <span class="text-danger">EDITION</span></h1>
+      <p class="text-muted">
+        The TenZ Takeover is OUT NOW! <br>
+        Time to become inevitable & grab this limited-edition 80HE.
+      </p>
+      <div class="d-flex p-3"> 
+        <div class="card position-relative card-1 d-flex flex-row w-100" >
+        <div class=" justify-content-center "> 
+          <img class="img-fluid " style="width: 450px;  height: auto;" src="./img/image copy 19.png" alt="">
+        </div>
+         
+        <div class="w-100 d-flex flex-column p-3 text-center">
+          <h3 class="m-0 fw-semibold text-dark">Wooting 80HE <br>TENZ-Edition</h3>
+          <p>Improve your gaming expirience.</p>
+          <p>239.90$</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center justify-content-md-end ">
+      <img class="img-fluid shadow-sm" style="max-width: 450px; width: 100%; border-radius: 20px;" src="./img/image copy 18.png" alt="">
+    </div>
+  </div>
+</div>
+  </section>
+
+
+
+
   <!-- Top product section -->
   <section class="container ">
-    <h1 class="text-black d-flex justify-content-center p-4">BEST <span class="text-warning"> SELLER</span></h1>
+    <h1 class="text-black text-center p-4">BEST <span class="text-warning"> SELLER</span></h1>
     <div class="row g-4 py-3">
       <!-- Product1 -->
       <div class="col-12 col-md-6 col-lg-4">
@@ -99,8 +175,7 @@
             </div>
 
             <P class="fw-bold fs-5">75% Gasket Wireless Mechanical Keyboard.</P>
-            <p class="fw-bold fs-5 text-success">$50</p>
-            <a href="#" class="btn btn-dark rounded-pill mt-auto">Add to Cart</a>
+
           </div>
         </div>
       </div>
@@ -120,8 +195,7 @@
               <span class="text-muted ms-1">(5.0)</span>
             </div>
             <P class="fw-bold fs-5">Gasket-mounted Hot- swappable Tri-Mode Mechanical Keyboard with Screen.</P>
-            <p class="fw-bold fs-5   text-success">$60</p>
-            <a href="#" class="btn btn-dark rounded-pill mt-auto">Add to Cart</a>
+           
           </div>
         </div>
       </div>
@@ -142,8 +216,7 @@
             </div>
 
             <P class="fw-bold fs-5">75% Mechanical Keyboard with Hot Swappable Reaper Switch.</P>
-            <p class="fw-bold fs-5  text-success ">$50</p>
-            <a href="#" class="btn btn-dark rounded-pill mt-auto">Add to Cart</a>
+        
           </div>
         </div>
       </div>
@@ -151,7 +224,7 @@
 
   </section>
   <!-- Footer -->
-  <footer class="py-5 bg-dark w-100">
+  <footer class="py-5 mt-5 bg-dark w-100">
     <div class="container ">
       <div class="row gy-4">
         <div class="col-12 col-md-4 col-lg-4 col-sm-12">
@@ -163,16 +236,15 @@
             about feel as much as performance.</p>
         </div>
 
-        <div class="col-12 col-md-4 col-lg-4 col-sm-12">
-          <div class="d-flex align-items-center gap-2 ms-5 pt-3">
-            <h6 class="text-white mb-0">Phone Number : 097 3682 442</h6>
-          </div>
-          <div class="d-flex align-items-center gap-2  ms-5">
-            <h6 class="text-white mt-3">Email : heanvansak27737@gmail.com</h6>
-          </div>
+        <div class="col-12 col-md-4 col-lg-4 col-sm-12 d-flex flex-column">
+          <h5 class="text-white">Quick link :</h5>
+          <a class="text-white text-decoration-none" href="./index.html">Home</a>
+          <a class="text-white text-decoration-none" href="./Keyboard.html">Products</a>
+          <a class="text-white text-decoration-none" href="./AboutPage.html">About</a>
+          <a class="text-white text-decoration-none" href="./services.html">Service</a>
         </div>
         <div class="col-12 col-md-4 col-lg-4 col-sm-12">
-          <h5 class="text-white mb-3">Follow us</h5>
+          <h5 class="text-white mb-3">Follow us :</h5>
           <div class="d-flex gap-3 fs-5 footer-icon ms-3">
             <a href="https://www.tiktok.com/@hvskeebs02?_r=1&_t=ZS-97BNWiLBuLc" style="color:#cfcfcf;"><i
                 class="fa-brands fa-tiktok"></i></a>

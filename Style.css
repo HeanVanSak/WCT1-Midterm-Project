@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Monserrat';
+   font-family:'Monserrat', 'sans-serif';
 }
 /* Header navbar */
 nav {
-    background: linear-gradient(135deg, #6b728036, #ffffff);
+  border: 1px solid black;
+ 
   }
 .navbar-nav {
     width: auto; 
@@ -88,12 +89,87 @@ i{
 .V{
   color: rgba(128, 0, 128, 0.42);
 }
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+.card-1 {
+  position: relative;
+  background: #1c1f2b;
+}
+
+.card-1::after, .card-1::before {
+  content: '';
+  position: absolute;
+  height: 108%; 
+  width: 103%;
+  background: conic-gradient(
+    from var(--angle), 
+    rgba(255, 0, 0, 0.4),     
+    rgba(255, 0, 255, 0.4),   
+    rgba(0, 0, 255, 0.4),     
+    rgba(0, 255, 255, 0.4),   
+    rgba(0, 255, 0, 0.4),     
+    rgba(255, 255, 0, 0.4),  
+    rgba(255, 0, 0, 0.4)     
+  );
+  
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: 4px; 
+  animation: Cardspin 4s linear infinite; 
+}
+.card-1::before {
+  filter: blur(2rem); 
+  opacity: 0.4;       
+}
+
+@keyframes Cardspin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+/* Carousel */
+.carousel{
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  overflow-x: auto;
+}
+.carousel::-webkit-scrollbar{
+  display:none;
+}
+.group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 7s infinite linear;
+  padding-right: 1em;
+  flex-shrink: 0;
+
+}
+.group img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+@keyframes spin{
+  from{translate: 0;}
+  to {translate: -100%;}
+  
+}
 
 /* Card product */
 
 .card.product-card {
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.583);
   border-radius: 20px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 
@@ -119,11 +195,6 @@ i{
    background-color: rgba(128, 128, 128, 0.12);
 }
 
-.card-title {
-  font-size: 20px;
-  font-weight: bold;
-}
-
 .icon{
   width: 150px;
 }
@@ -143,4 +214,26 @@ i{
 }
 .h5{
   font-size: 100px;
+}
+
+
+.typing-text {
+  overflow: hidden; 
+  border-right: 3px solid rgb(237, 147, 237); 
+  white-space: nowrap; 
+  letter-spacing: 2px;
+  
+  animation: 
+    typing 3.5s steps(16) infinite alternate,
+    blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 90%; }
+}
+
+@keyframes blink-cursor {
+  from, to { border-color: transparent; }
+  50% { border-color: rgb(0, 0, 0); }
 }
